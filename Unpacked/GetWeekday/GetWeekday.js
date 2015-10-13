@@ -16,7 +16,7 @@ function jobArrived( s : Switch, job : Job )
       var parsedMinute = regex.cap(5);
       
       // Log   
-      if(debug == true) s.log(2, parsedYear + ', ' + parsedMonth + ', ' + parsedDay + ', ' + parsedHour + ', ' + parsedMinute);
+	  if(debug == true) s.log(debugLevel, 'Parsed date values: ' + parsedYear + ', ' + parsedMonth + ', ' + parsedDay + ', ' + parsedHour + ', ' + parsedMinute);
       
       // Convert to date
       var date = new Date( parsedYear, parsedMonth, parsedDay, parsedHour, parsedMinute );
@@ -43,12 +43,22 @@ function jobArrived( s : Switch, job : Job )
 	// Get flow element properties
 	var dateString = s.getPropertyValue( 'DateString' );
 	var privateDataKey = s.getPropertyValue( 'PrivateDataKey' );
+	var debugging = s.getPropertyValue( 'Debug' );
+	
+	// Prepare debugging
+	var debug;
+	var debugLevel = 2;
+	if(debugging == 'Yes'){
+		debug = true;
+	} else {
+		debug = false;
+	}
    
    // Log
-   s.log(2, dateString+' becomes: ' + getDay( dateString ) );
+   if(debug) s.log(debugLevel, dateString+' becomes: ' + getDay( dateString, debug ) );
    
    // Write to PD
-   job.setPrivateData( privateDataKey, getDay( dateString ) );
+   job.setPrivateData( privateDataKey, getDay( dateString, debug ) );
    
    // End
    job.sendToSingle( job.getPath() );

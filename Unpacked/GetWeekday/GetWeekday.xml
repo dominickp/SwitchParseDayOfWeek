@@ -28,6 +28,7 @@
         <ObsoleteConnectionProperties Type="string" Editor="hide"/>
         <DateString Validation="Standard" LocalizedTagName="Date String" Subtype="inline" Default="" Tooltip="Date string in the following format: yyyyMMddHHmm" DetailedInfo="" Type="string" Editor="inline;sltextwithvar"></DateString>
         <PrivateDataKey Validation="Standard" LocalizedTagName="Private Data Key" Subtype="inline" Default="ParsedWeekday" Tooltip="PD key you would like to save the result to" DetailedInfo="" Type="string" Editor="inline;sltextwithvar">ParsedWeekday</PrivateDataKey>
+        <Debug Validation="Standard" LocalizedTagName="Debug" Subtype="inline" Default="No" Tooltip="" DetailedInfo="" Type="bool" Editor="inline">No</Debug>
     </ElementFields>
     <ConnectionFields/>
 </Object>
