@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Object>
+    <ElementFields>
+        <Name Type="string" Editor="hide">GetWeekday</Name>
+        <DisplayName Type="string" Editor="hide"/>
+        <Version Type="number" Editor="hide">1</Version>
+        <Keywords Type="string" Editor="hide"/>
+        <Tooltip Type="string" Editor="hide"/>
+        <IncomingConnections RequireAtLeastOne="Yes" Editor="hide">Yes</IncomingConnections>
+        <OutgoingConnections RequireAtLeastOne="Yes" DetailedInfo="" Editor="hide">Unlimited</OutgoingConnections>
+        <ConnectionType Editor="hide">Move</ConnectionType>
+        <ScriptFunctions Editor="hide">jobArrived</ScriptFunctions>
+        <ExecutionMode Editor="hide">Serialized</ExecutionMode>
+        <NumberOfSlots Editor="hide">Default</NumberOfSlots>
+        <ExecutionGroup Editor="hide"/>
+        <PerformanceTuning Editor="hide">No</PerformanceTuning>
+        <IdleAfterJob Editor="hide">0</IdleAfterJob>
+        <PositionInElementPane Editor="hide">Configurators</PositionInElementPane>
+        <SubcategoryInElementPane Editor="hide">&lt;ValueDescription Type="stringlist">&lt;Value>Custom&lt;/Value>&lt;/ValueDescription></SubcategoryInElementPane>
+        <DispositionInElementPane Type="number" Editor="hide"/>
+        <Description Type="string" Editor="hide">Converts a date string to a week day and then saves it to private data</Description>
+        <Compatibility Type="string" Editor="hide"/>
+        <SupportInfo Type="string" Editor="hide"/>
+        <AppDiscovery Type="string" Editor="hide"/>
+        <Connections Type="string" Editor="hide"/>
+        <SwitchModule Type="string" Editor="hide"/>
+        <ObsoleteProperties Type="string" Editor="hide"/>
+        <ObsoleteConnectionProperties Type="string" Editor="hide"/>
+        <DateString Validation="Standard" LocalizedTagName="Date String" Subtype="inline" Default="" Tooltip="Date string in the following format: yyyyMMddHHmm" DetailedInfo="" Type="string" Editor="inline;sltextwithvar"></DateString>
+        <PrivateDataKey Validation="Standard" LocalizedTagName="Private Data Key" Subtype="inline" Default="ParsedWeekday" Tooltip="PD key you would like to save the result to" DetailedInfo="" Type="string" Editor="inline;sltextwithvar">ParsedWeekday</PrivateDataKey>
+    </ElementFields>
+    <ConnectionFields/>
+</Object>

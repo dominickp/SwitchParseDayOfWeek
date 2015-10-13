@@ -1,0 +1,12 @@
+<Manifest>
+    <ScripterInstanceName>GetWeekday</ScripterInstanceName>
+    <ScriptPackageFormatVersion>1.0</ScriptPackageFormatVersion>
+    <ScripterPassword></ScripterPassword>
+    <ScriptDeclarationFile>GetWeekday.xml</ScriptDeclarationFile>
+    <ScriptProgramFiles>
+        <ScriptProgramFile ScriptLanguage="JavaScript">GetWeekday.js</ScriptProgramFile>
+    </ScriptProgramFiles>
+    <ScriptIconFile></ScriptIconFile>
+    <AppleBinary></AppleBinary>
+    <LocalizationItems/>
+</Manifest>
